@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+// import { NextResponse } from 'next/server';
 
 interface Post {
   id: number;
@@ -15,9 +15,9 @@ const posts: Post[] = [
   { id: 6, title: 'Iusto sunt nobis quasi veritatis', thumbnailUrl: 'https://via.placeholder.com/600/FFFF00/000000?text=600x600' },
 ];
 
-export async function GET() {
-  return NextResponse.json(posts);
-}
+// export async function GET() {
+//   return NextResponse.json(posts);
+// }
 
 export default function PostsPage() {
   const postsData = posts;
